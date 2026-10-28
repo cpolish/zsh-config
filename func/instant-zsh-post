@@ -1,0 +1,11 @@
+# Source: https://gist.github.com/romkatv/8b318a610dc302bdbe1487bb1847ad99
+#
+# Must be called at the very bottom of ~/.zshrc. Must be paired with
+# instant-zsh-pre.
+emulate -L zsh
+if (( ${+precmd_functions} && ${+precmd_functions[(I)_clear-loading-prompt]} )); then
+  # Move _clear-loading-prompt to the end so that the loading prompt doesn't get
+  # erased too soon. This assumes that the real prompt is set during the first
+  # `precmd` or even earlier.
+  precmd_functions=(${(@)precmd_functions:#_clear-loading-prompt} _clear-loading-prompt)
+fi

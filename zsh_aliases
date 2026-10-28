@@ -1,0 +1,16 @@
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+alias ll='ls -l'
+alias la='ls -a'
+alias lla='ls -al'
+
+alias py=python
+alias pip=pip3
+
+alias sudoedit='sudo -e'
+
+alias zed=zed-preview
+
+alias tf=terraform

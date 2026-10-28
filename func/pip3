@@ -1,0 +1,6 @@
+if [[ -z $VIRTUAL_ENV && $1 == "install" ]]
+then
+    command pip3 "$@" --user
+else
+    command pip3 "$@"
+fi

@@ -1,0 +1,11 @@
+# Generated files from the root to ignore
+/.zcompcache/
+/.zsh_sessions/
+/.zcompdump
+/.zsh_history
+
+# Compiled functions
+*.zwc
+
+# Local config (each machine sets separately)
+/zsh_path_vars
